@@ -312,26 +312,26 @@
     titleWrapper.appendChild(title);
 
     // Create close element.
-    var closeWrapper = document.createElement('div');
-    closeWrapper.classList.add('info-hotspot-close-wrapper');
-    var closeIcon = document.createElement('img');
-    closeIcon.src = 'img/close.png';
-    closeIcon.classList.add('info-hotspot-close-icon');
-    closeWrapper.appendChild(closeIcon);
+    // var closeWrapper = document.createElement('div');
+    // closeWrapper.classList.add('info-hotspot-close-wrapper');
+    // var closeIcon = document.createElement('img');
+    // closeIcon.src = 'img/close.png';
+    // closeIcon.classList.add('info-hotspot-close-icon');
+    // closeWrapper.appendChild(closeIcon);
 
     // Construct header element.
     header.appendChild(iconWrapper);
     header.appendChild(titleWrapper);
-    header.appendChild(closeWrapper);
+    // header.appendChild(closeWrapper);
 
     // Create text element.
-    var text = document.createElement('div');
+    // var text = document.createElement('div');
     // text.classList.add('info-hotspot-text');
     // text.innerHTML = hotspot.text;
 
     // Place header and text into wrapper element.
     wrapper.appendChild(header);
-    wrapper.appendChild(text);
+    // wrapper.appendChild(text);
 
     // Create a modal for the hotspot content to appear on mobile mode.
     var modal = document.createElement('div');
@@ -345,10 +345,10 @@
     };
 
     // Show content when hotspot is clicked.
-    wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
+    // wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
 
     // Hide content when close icon is clicked.
-    modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);
+    // modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);
 
     // Prevent touch and scroll events from reaching the parent element.
     // This prevents the view control logic from interfering with the hotspot.
